@@ -9,6 +9,13 @@
     <p><strong>College:</strong> {{ request.user.customuser.college }}</p>
     <p><strong>Total Courses Enrolled:</strong> {{ total_enrolled }}</p>
     <p><strong>Courses Completed:</strong> {{ completed_courses }}</p>
+    {% if user.resume.pdf %}
+    <a href="{{ user.resume.pdf.url }}" class="btn btn-success">Download Resume</a>
+{% else %}
+    <p>You have not completed your resume yet.</p>
+{% endif %}
+
+
     <!-- Add profile picture and other details as needed -->
 </div>
 {% endblock %}
