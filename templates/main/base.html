@@ -122,15 +122,19 @@
                     <a class="nav-link" href="{% url 'questions' %}">Questions</a>
                 </li>
                
+                
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'notifications' %}">Notifications
+                    <a class="nav-link" href="{% url 'create_resume' %}">Resume Builder</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'forum:forum_home' %}">Forum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'notifications' %}">🔔
                         {% if unread_notifications_count > 0 %}
                             <span class="notification-badge">{{ unread_notifications_count }}</span>
                         {% endif %}
                     </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'create_resume' %}">Resume Builder</a>
                 </li>
                 {% if user.is_authenticated %}
                     <li class="nav-item">

@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('main.urls')),
     path('resume/', include('resume_builder.urls')),
+    path('forum/',include('forum.urls'))
 ]
 
 

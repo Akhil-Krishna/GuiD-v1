@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'channels',
-    'resume_builder'
+    'resume_builder',
+    'forum'
     
 ]
 
